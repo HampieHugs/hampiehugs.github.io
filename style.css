@@ -1,1 +1,62 @@
 
+/* ------------------------------
+   Hampie Hugs - First Style
+   ------------------------------ */
+
+body {
+    margin: 0;
+    background-color: #f8f4ef;
+    color: #2c2927;
+    font-family: Georgia, serif;
+}
+
+header {
+    padding: 25px 60px;
+    text-align: center;
+    background-color: #f8f4ef;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.hero p:first-of-type {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.hero p:last-of-type {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero a {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #b58b8b;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+}
