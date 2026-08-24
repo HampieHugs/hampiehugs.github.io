@@ -221,59 +221,11 @@ nav a:hover {
     border-radius: 50%;
 }
 
-/* --------------------------------
-   ANIMATION
-   -------------------------------- */
-
-@keyframes giftAppear {
-    from {
-        opacity: 0;
-        transform: translateY(35px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes lidSettle {
-    0% {
-        transform: translateY(-35px) rotate(-5deg);
-    }
-
-    60% {
-        transform: translateY(3px) rotate(1deg);
-    }
-
-    100% {
-        transform: translateY(0) rotate(0);
-    }
-}
-
-@keyframes bowAppear {
-    0% {
-        opacity: 0;
-        transform: translateX(-50%) scale(0);
-    }
-
-    70% {
-        transform: translateX(-50%) scale(1.15);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(-50%) scale(1);
-    }
-}
-
-@keyframes giftBounce {
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-4px);
-    }
+.wrapping-animation {
+    height: 180px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
 }
