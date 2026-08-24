@@ -335,19 +335,12 @@ nav a:hover {
    ------------------------------ */
 
 .square-bow-loop {
-    fill: url(#bowSatin);
-
+    fill: #d8bd78;
     stroke: none;
 }
 
-
-/* ------------------------------
-   BOW TAILS
-   ------------------------------ */
-
 .square-bow-tail {
-    fill: url(#bowSatin);
-
+    fill: #d8bd78;
     stroke: none;
 }
 
