@@ -153,41 +153,45 @@ nav a:hover {
     animation: hhBoxAppear 0.8s ease-out 0.2s forwards;
 }
 
-/* Vertical ribbon */
+/* ------------------------------
+   SLIM RIBBONS
+   ------------------------------ */
 
 .hh-ribbon-vertical {
     position: absolute;
-    left: 50px;
+    left: 55px;
     top: 0;
 
-    width: 22px;
+    width: 14px;
     height: 100%;
 
     background: linear-gradient(
         90deg,
-        #b89552,
+        #a9894d,
         #d8bd78,
         #b89552
     );
 
     box-shadow:
-        inset 1px 0 rgba(255, 255, 255, 0.18),
-        inset -1px 0 rgba(90, 65, 30, 0.12);
+        inset 1px 0 rgba(255, 255, 255, 0.2),
+        inset -1px 0 rgba(90, 65, 30, 0.1);
 
     transform: scaleY(0);
     transform-origin: top;
 
     animation: hhRibbonDown 0.7s ease-out 1.2s forwards;
 }
+
+
 /* Horizontal ribbon */
 
 .hh-ribbon-horizontal {
     position: absolute;
     left: 0;
-    top: 27px;
+    top: 30px;
 
     width: 100%;
-    height: 17px;
+    height: 11px;
 
     background: linear-gradient(
         180deg,
@@ -322,30 +326,123 @@ nav a:hover {
 
 /* Ribbon lines */
 
-.bow-stroke {
-    fill: none;
-    stroke: #a9894d;
-    stroke-width: 2.2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+/* ------------------------------
+   ELEGANT SATIN BOW
+   ------------------------------ */
 
-    stroke-dasharray: 180;
-    stroke-dashoffset: 180;
+.hh-bow {
+    position: absolute;
 
-    animation: hhRibbonDraw 0.9s ease-out 2.8s forwards;
+    width: 100px;
+    height: 65px;
+
+    left: 30px;
+    bottom: 41px;
+
+    z-index: 20;
+
+    opacity: 0;
+
+    transform-origin: center bottom;
+
+    animation:
+        hhBowAppear 0.8s cubic-bezier(.2, 1.4, .4, 1) 2.7s forwards;
 }
 
-/* Subtle filled centre */
+.hh-bow svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+
+/* ------------------------------
+   BOW LOOPS
+   ------------------------------ */
+
+.bow-loop {
+    fill: url(#bowGradient);
+
+    stroke: #a9894d;
+    stroke-width: 1;
+
+    transform-origin: center;
+}
+
+
+/* ------------------------------
+   BOW TAILS
+   ------------------------------ */
+
+.bow-tail {
+    fill: url(#bowGradient);
+
+    stroke: #a9894d;
+    stroke-width: 1;
+}
+
+
+/* ------------------------------
+   CENTRE KNOT
+   ------------------------------ */
 
 .bow-knot {
     fill: #c9a45f;
+
     stroke: #a9894d;
-    stroke-width: 1.5;
+    stroke-width: 1;
 
-    transform-origin: 80px 28px;
-    transform: scale(0);
+    transform-origin: 80px 30px;
 
-    animation: hhKnotAppear 0.45s cubic-bezier(.2, 1.5, .4, 1) 3.45s forwards;
+    animation:
+        hhKnotAppear
+        0.45s
+        cubic-bezier(.2, 1.5, .4, 1)
+        3.45s
+        forwards;
+}
+
+
+/* ------------------------------
+   BOW APPEAR
+   ------------------------------ */
+
+@keyframes hhBowAppear {
+
+    0% {
+        opacity: 0;
+        transform: translateY(-8px) scale(0.65);
+    }
+
+    65% {
+        opacity: 1;
+        transform: translateY(2px) scale(1.06);
+    }
+
+    85% {
+        transform: translateY(-1px) scale(0.98);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+@keyframes hhKnotAppear {
+
+    0% {
+        transform: scale(0);
+    }
+
+    65% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 
