@@ -297,36 +297,7 @@ nav a:hover {
 }
 
 /* ------------------------------
-   ELEGANT RIBBON BOW
-   ------------------------------ */
-
-.hh-bow {
-    position: absolute;
-
-    width: 100px;
-    height: 65px;
-
-    left: 30px;
-    bottom: 41px;
-
-    z-index: 20;
-
-    transform-origin: center bottom;
-
-    animation: hhBowAppear 0.8s cubic-bezier(.2, 1.4, .4, 1) 2.7s forwards;
-
-    opacity: 0;
-}
-
-.hh-bow svg {
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-}
-
-/* Ribbon lines */
-/* ------------------------------
-   REALISTIC RIBBON BOW
+   STRUCTURED SATIN BOW
    ------------------------------ */
 
 .hh-bow {
@@ -347,7 +318,7 @@ nav a:hover {
     animation:
         hhBowAppear
         0.8s
-        cubic-bezier(.2, 1.35, .4, 1)
+        cubic-bezier(.2, 1.2, .4, 1)
         2.7s
         forwards;
 }
@@ -363,13 +334,10 @@ nav a:hover {
    BOW LOOPS
    ------------------------------ */
 
-.real-bow-loop {
+.square-bow-loop {
     fill: url(#bowSatin);
 
-    stroke: #a9894d;
-    stroke-width: 1;
-
-    stroke-linejoin: round;
+    stroke: none;
 }
 
 
@@ -377,47 +345,26 @@ nav a:hover {
    BOW TAILS
    ------------------------------ */
 
-.real-bow-tail {
+.square-bow-tail {
     fill: url(#bowSatin);
 
-    stroke: #a9894d;
-    stroke-width: 1;
-
-    stroke-linejoin: round;
+    stroke: none;
 }
 
 
 /* ------------------------------
-   LOOP FOLDS
+   FOLDS
    ------------------------------ */
 
-.bow-fold-line {
+.square-bow-fold {
     fill: none;
 
-    stroke: url(#bowShine);
+    stroke: rgba(255, 255, 255, 0.22);
 
     stroke-width: 2;
 
     stroke-linecap: round;
-
-    opacity: .8;
-}
-
-
-/* ------------------------------
-   TAIL HIGHLIGHTS
-   ------------------------------ */
-
-.bow-tail-highlight {
-    fill: none;
-
-    stroke: url(#bowShine);
-
-    stroke-width: 1.5;
-
-    stroke-linecap: round;
-
-    opacity: .65;
+    stroke-linejoin: round;
 }
 
 
@@ -425,19 +372,17 @@ nav a:hover {
    CENTRE KNOT
    ------------------------------ */
 
-.real-bow-knot {
-    fill: #c6a45d;
+.square-bow-knot {
+    fill: #c4a15b;
 
-    stroke: #9f7f42;
+    stroke: none;
 
-    stroke-width: 1;
-
-    transform-origin: 100px 47px;
+    transform-origin: 100px 45px;
 
     animation:
         hhKnotAppear
         0.45s
-        cubic-bezier(.2, 1.5, .4, 1)
+        cubic-bezier(.2, 1.4, .4, 1)
         3.45s
         forwards;
 }
@@ -451,15 +396,15 @@ nav a:hover {
 
     0% {
         opacity: 0;
-        transform: translateY(-10px) scale(.7);
+        transform: translateY(-8px) scale(.72);
     }
 
-    60% {
+    65% {
         opacity: 1;
-        transform: translateY(2px) scale(1.05);
+        transform: translateY(2px) scale(1.04);
     }
 
-    80% {
+    85% {
         transform: translateY(-1px) scale(.98);
     }
 
@@ -481,7 +426,7 @@ nav a:hover {
     }
 
     65% {
-        transform: scale(1.18);
+        transform: scale(1.12);
     }
 
     100% {
