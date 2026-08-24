@@ -78,12 +78,12 @@ nav a {
 nav a:hover {
     background: linear-gradient(
         120deg,
-        #8f7445,
-        #d6bd7a,
-        #f4e5b2,
-        #b39458,
-        #e2cc8b,
-        #8f7445
+        #6f5735,
+        #a8874f,
+        #d8bd78,
+        #8f703e,
+        #c9aa68,
+        #6f5735
     );
 
     background-size: 200% auto;
@@ -91,10 +91,4 @@ nav a:hover {
     -webkit-text-fill-color: transparent;
 
     animation: goldShimmer 2s linear infinite;
-}
-
-@keyframes goldShimmer {
-    to {
-        background-position: 200% center;
-    }
 }
