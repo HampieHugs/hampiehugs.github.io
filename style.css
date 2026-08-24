@@ -581,13 +581,14 @@ nav a:hover {
         width: 210px;
     }
 
-    nav {
-        gap: 7px 14px;
-    }
+   nav {
+    column-gap: 20px;
+    row-gap: 10px;
+}
 
-    nav a {
-        font-size: 12px;
-    }
+nav a {
+    font-size: 12px;
+}
 
 
     .hh-animation {
