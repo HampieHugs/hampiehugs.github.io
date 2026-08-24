@@ -38,53 +38,81 @@
 
         <defs>
             <linearGradient id="bowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#d8bd78"/>
-                <stop offset="50%" stop-color="#b89552"/>
-                <stop offset="100%" stop-color="#d8bd78"/>
+                <stop offset="0%" stop-color="#e0c889"/>
+                <stop offset="45%" stop-color="#c3a45e"/>
+                <stop offset="100%" stop-color="#a9894d"/>
+            </linearGradient>
+
+            <linearGradient id="bowHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+                <stop offset="50%" stop-color="#ffffff" stop-opacity=".28"/>
+                <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
             </linearGradient>
         </defs>
 
-        <!-- Left bow loop -->
+
+        <!-- LEFT LOOP -->
         <path
             class="bow-loop bow-left"
-            d="M80 30
-               C67 12, 43 7, 35 18
-               C28 28, 42 42, 60 42
-               C69 42, 76 36, 80 30 Z"
+            d="M78 31
+               C70 21, 61 11, 48 10
+               C36 9, 28 15, 31 25
+               C34 35, 47 41, 60 40
+               C68 39, 74 35, 78 31 Z"
         />
 
-        <!-- Right bow loop -->
+        <!-- RIGHT LOOP -->
         <path
             class="bow-loop bow-right"
-            d="M80 30
-               C93 12, 117 7, 125 18
-               C132 28, 118 42, 100 42
-               C91 42, 84 36, 80 30 Z"
+            d="M82 31
+               C90 21, 99 11, 112 10
+               C124 9, 132 15, 129 25
+               C126 35, 113 41, 100 40
+               C92 39, 86 35, 82 31 Z"
         />
 
-        <!-- Left ribbon tail -->
+
+        <!-- LEFT TAIL -->
         <path
             class="bow-tail bow-left-tail"
-            d="M75 34
-               C68 47, 61 62, 56 82
-               L70 71
-               L78 39 Z"
+            d="M75 35
+               C69 45, 64 58, 59 78
+               L72 68
+               L78 42
+               Z"
         />
 
-        <!-- Right ribbon tail -->
+        <!-- RIGHT TAIL -->
         <path
             class="bow-tail bow-right-tail"
-            d="M85 34
-               C92 47, 99 62, 104 82
-               L90 71
-               L82 39 Z"
+            d="M85 35
+               C91 45, 96 58, 101 78
+               L88 68
+               L82 42
+               Z"
         />
 
-        <!-- Centre knot -->
+
+        <!-- LEFT LOOP FOLD -->
+        <path
+            class="bow-fold"
+            d="M72 18
+               C66 24, 64 31, 68 37"
+        />
+
+        <!-- RIGHT LOOP FOLD -->
+        <path
+            class="bow-fold"
+            d="M88 18
+               C94 24, 96 31, 92 37"
+        />
+
+
+        <!-- CENTRE KNOT -->
         <ellipse
             class="bow-knot"
             cx="80"
-            cy="30"
+            cy="31"
             rx="8"
             ry="7"
         />
