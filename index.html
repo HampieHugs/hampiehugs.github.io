@@ -31,90 +31,153 @@
             <div class="hh-ribbon-vertical"></div>
             <div class="hh-ribbon-horizontal"></div>
         </div>
-
 <div class="hh-bow">
 
-    <svg viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
 
         <defs>
-            <linearGradient id="bowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#e0c889"/>
-                <stop offset="45%" stop-color="#c3a45e"/>
-                <stop offset="100%" stop-color="#a9894d"/>
+
+            <!-- Main satin ribbon -->
+            <linearGradient id="bowSatin" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#dfc68a"/>
+                <stop offset="35%" stop-color="#c5a761"/>
+                <stop offset="65%" stop-color="#b18f4b"/>
+                <stop offset="100%" stop-color="#d4b971"/>
             </linearGradient>
 
-            <linearGradient id="bowHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+            <!-- Soft highlight -->
+            <linearGradient id="bowShine" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
-                <stop offset="50%" stop-color="#ffffff" stop-opacity=".28"/>
+                <stop offset="50%" stop-color="#ffffff" stop-opacity=".22"/>
                 <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
             </linearGradient>
+
         </defs>
 
 
-        <!-- LEFT LOOP -->
-        <path
-            class="bow-loop bow-left"
-            d="M78 31
-               C70 21, 61 11, 48 10
-               C36 9, 28 15, 31 25
-               C34 35, 47 41, 60 40
-               C68 39, 74 35, 78 31 Z"
-        />
+        <!-- ==========================
+             LEFT BOW LOOP
+             ========================== -->
 
-        <!-- RIGHT LOOP -->
         <path
-            class="bow-loop bow-right"
-            d="M82 31
-               C90 21, 99 11, 112 10
-               C124 9, 132 15, 129 25
-               C126 35, 113 41, 100 40
-               C92 39, 86 35, 82 31 Z"
+            class="real-bow-loop"
+            d="
+                M100 47
+                C88 35, 77 20, 61 16
+                C47 12, 34 18, 34 30
+                C34 43, 49 51, 66 52
+                C80 53, 91 49, 100 47
+                Z
+            "
         />
 
 
-        <!-- LEFT TAIL -->
-        <path
-            class="bow-tail bow-left-tail"
-            d="M75 35
-               C69 45, 64 58, 59 78
-               L72 68
-               L78 42
-               Z"
-        />
+        <!-- ==========================
+             RIGHT BOW LOOP
+             ========================== -->
 
-        <!-- RIGHT TAIL -->
         <path
-            class="bow-tail bow-right-tail"
-            d="M85 35
-               C91 45, 96 58, 101 78
-               L88 68
-               L82 42
-               Z"
+            class="real-bow-loop"
+            d="
+                M100 47
+                C112 35, 123 20, 139 16
+                C153 12, 166 18, 166 30
+                C166 43, 151 51, 134 52
+                C120 53, 109 49, 100 47
+                Z
+            "
         />
 
 
-        <!-- LEFT LOOP FOLD -->
+        <!-- ==========================
+             LEFT RIBBON TAIL
+             ========================== -->
+
         <path
-            class="bow-fold"
-            d="M72 18
-               C66 24, 64 31, 68 37"
+            class="real-bow-tail"
+            d="
+                M94 49
+                C88 61, 80 77, 72 101
+                L91 88
+                L101 55
+                Z
+            "
         />
 
-        <!-- RIGHT LOOP FOLD -->
+
+        <!-- ==========================
+             RIGHT RIBBON TAIL
+             ========================== -->
+
         <path
-            class="bow-fold"
-            d="M88 18
-               C94 24, 96 31, 92 37"
+            class="real-bow-tail"
+            d="
+                M106 49
+                C112 61, 120 77, 128 101
+                L109 88
+                L99 55
+                Z
+            "
         />
 
 
-        <!-- CENTRE KNOT -->
+        <!-- ==========================
+             FOLDS IN LEFT LOOP
+             ========================== -->
+
+        <path
+            class="bow-fold-line"
+            d="
+                M91 39
+                C81 34, 72 27, 65 20
+            "
+        />
+
+
+        <!-- ==========================
+             FOLDS IN RIGHT LOOP
+             ========================== -->
+
+        <path
+            class="bow-fold-line"
+            d="
+                M109 39
+                C119 34, 128 27, 135 20
+            "
+        />
+
+
+        <!-- ==========================
+             SUBTLE TAIL HIGHLIGHTS
+             ========================== -->
+
+        <path
+            class="bow-tail-highlight"
+            d="
+                M91 57
+                C86 69, 80 82, 76 94
+            "
+        />
+
+        <path
+            class="bow-tail-highlight"
+            d="
+                M109 57
+                C114 69, 120 82, 124 94
+            "
+        />
+
+
+        <!-- ==========================
+             CENTRE KNOT
+             ========================== -->
+
         <ellipse
-            class="bow-knot"
-            cx="80"
-            cy="31"
-            rx="8"
-            ry="7"
+            class="real-bow-knot"
+            cx="100"
+            cy="47"
+            rx="10"
+            ry="8"
         />
 
     </svg>
