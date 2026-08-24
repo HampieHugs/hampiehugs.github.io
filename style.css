@@ -346,7 +346,11 @@ nav a:hover {
     transform-origin: center bottom;
 
     animation:
-        hhBowAppear 0.8s cubic-bezier(.2, 1.4, .4, 1) 2.7s forwards;
+        hhBowAppear
+        0.8s
+        cubic-bezier(.2, 1.4, .4, 1)
+        2.7s
+        forwards;
 }
 
 .hh-bow svg {
@@ -366,12 +370,12 @@ nav a:hover {
     stroke: #a9894d;
     stroke-width: 1;
 
-    transform-origin: center;
+    stroke-linejoin: round;
 }
 
 
 /* ------------------------------
-   BOW TAILS
+   RIBBON TAILS
    ------------------------------ */
 
 .bow-tail {
@@ -379,6 +383,24 @@ nav a:hover {
 
     stroke: #a9894d;
     stroke-width: 1;
+
+    stroke-linejoin: round;
+}
+
+
+/* ------------------------------
+   FOLDS
+   ------------------------------ */
+
+.bow-fold {
+    fill: none;
+
+    stroke: url(#bowHighlight);
+    stroke-width: 2;
+
+    stroke-linecap: round;
+
+    opacity: .8;
 }
 
 
@@ -392,7 +414,7 @@ nav a:hover {
     stroke: #a9894d;
     stroke-width: 1;
 
-    transform-origin: 80px 30px;
+    transform-origin: 80px 31px;
 
     animation:
         hhKnotAppear
@@ -404,23 +426,23 @@ nav a:hover {
 
 
 /* ------------------------------
-   BOW APPEAR
+   BOW APPEARANCE
    ------------------------------ */
 
 @keyframes hhBowAppear {
 
     0% {
         opacity: 0;
-        transform: translateY(-8px) scale(0.65);
+        transform: translateY(-8px) scale(.65);
     }
 
-    65% {
+    60% {
         opacity: 1;
-        transform: translateY(2px) scale(1.06);
+        transform: translateY(2px) scale(1.07);
     }
 
-    85% {
-        transform: translateY(-1px) scale(0.98);
+    80% {
+        transform: translateY(-1px) scale(.98);
     }
 
     100% {
@@ -429,6 +451,10 @@ nav a:hover {
     }
 }
 
+
+/* ------------------------------
+   KNOT APPEARANCE
+   ------------------------------ */
 
 @keyframes hhKnotAppear {
 
@@ -445,52 +471,4 @@ nav a:hover {
     }
 }
 
-
-/* ------------------------------
-   BOW ANIMATION
-   ------------------------------ */
-
-@keyframes hhBowAppear {
-
-    0% {
-        opacity: 0;
-        transform: translateY(-8px) scale(0.65);
-    }
-
-    70% {
-        opacity: 1;
-        transform: translateY(2px) scale(1.05);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-@keyframes hhRibbonDraw {
-
-    from {
-        stroke-dashoffset: 180;
-    }
-
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes hhKnotAppear {
-
-    0% {
-        transform: scale(0);
-    }
-
-    70% {
-        transform: scale(1.25);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
 
