@@ -30,7 +30,7 @@ header img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 80px 20px;
+    padding: 45px 20px 80px;
     box-sizing: border-box;
 }
 
@@ -102,4 +102,178 @@ nav a:hover {
     -webkit-text-fill-color: transparent;
 
     animation: goldShimmer 2s linear infinite;
+}
+/* --------------------------------
+   GIFT WRAPPING ANIMATION
+   -------------------------------- */
+
+.wrapping-animation {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    background-color: #eee5d8;
+}
+
+.gift {
+    position: relative;
+    width: 130px;
+    height: 105px;
+    animation: giftAppear 1s ease-out forwards,
+               giftBounce 4s ease-in-out 2s infinite;
+}
+
+/* Gift box */
+
+.gift-box {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    width: 110px;
+    height: 70px;
+    background: #c9a48f;
+    border-radius: 3px;
+    box-shadow: 0 8px 15px rgba(70, 50, 40, 0.12);
+    overflow: hidden;
+}
+
+/* Lid */
+
+.gift-lid {
+    position: absolute;
+    z-index: 3;
+    bottom: 69px;
+    left: 5px;
+    width: 120px;
+    height: 18px;
+    background: #b58b8b;
+    border-radius: 3px;
+    transform-origin: center;
+    animation: lidSettle 1.2s ease-out 0.8s forwards;
+}
+
+/* Vertical ribbon */
+
+.vertical-ribbon {
+    position: absolute;
+    left: 44px;
+    top: 0;
+    width: 22px;
+    height: 100%;
+    background: #d8bd78;
+}
+
+/* Horizontal ribbon */
+
+.horizontal-ribbon {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 100%;
+    height: 18px;
+    background: #d8bd78;
+}
+
+/* Bow */
+
+.bow {
+    position: absolute;
+    z-index: 5;
+    bottom: 82px;
+    left: 50%;
+    width: 60px;
+    height: 35px;
+    transform: translateX(-50%);
+    animation: bowAppear 0.7s ease-out 1.5s both;
+}
+
+.bow-left,
+.bow-right {
+    position: absolute;
+    top: 5px;
+    width: 30px;
+    height: 23px;
+    background: #d8bd78;
+    border: 2px solid #b59657;
+}
+
+.bow-left {
+    left: 0;
+    border-radius: 18px 4px 18px 18px;
+    transform: rotate(-15deg);
+}
+
+.bow-right {
+    right: 0;
+    border-radius: 4px 18px 18px 18px;
+    transform: rotate(15deg);
+}
+
+.bow-knot {
+    position: absolute;
+    z-index: 2;
+    left: 22px;
+    top: 9px;
+    width: 16px;
+    height: 16px;
+    background: #b59657;
+    border-radius: 50%;
+}
+
+/* --------------------------------
+   ANIMATION
+   -------------------------------- */
+
+@keyframes giftAppear {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes lidSettle {
+    0% {
+        transform: translateY(-35px) rotate(-5deg);
+    }
+
+    60% {
+        transform: translateY(3px) rotate(1deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+@keyframes bowAppear {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0);
+    }
+
+    70% {
+        transform: translateX(-50%) scale(1.15);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+}
+
+@keyframes giftBounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
 }
