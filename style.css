@@ -325,19 +325,18 @@ nav a:hover {
 }
 
 /* Ribbon lines */
-
 /* ------------------------------
-   ELEGANT SATIN BOW
+   REALISTIC RIBBON BOW
    ------------------------------ */
 
 .hh-bow {
     position: absolute;
 
-    width: 100px;
-    height: 65px;
+    width: 120px;
+    height: 72px;
 
-    left: 30px;
-    bottom: 41px;
+    left: 20px;
+    bottom: 37px;
 
     z-index: 20;
 
@@ -348,7 +347,7 @@ nav a:hover {
     animation:
         hhBowAppear
         0.8s
-        cubic-bezier(.2, 1.4, .4, 1)
+        cubic-bezier(.2, 1.35, .4, 1)
         2.7s
         forwards;
 }
@@ -364,8 +363,8 @@ nav a:hover {
    BOW LOOPS
    ------------------------------ */
 
-.bow-loop {
-    fill: url(#bowGradient);
+.real-bow-loop {
+    fill: url(#bowSatin);
 
     stroke: #a9894d;
     stroke-width: 1;
@@ -375,11 +374,11 @@ nav a:hover {
 
 
 /* ------------------------------
-   RIBBON TAILS
+   BOW TAILS
    ------------------------------ */
 
-.bow-tail {
-    fill: url(#bowGradient);
+.real-bow-tail {
+    fill: url(#bowSatin);
 
     stroke: #a9894d;
     stroke-width: 1;
@@ -389,13 +388,14 @@ nav a:hover {
 
 
 /* ------------------------------
-   FOLDS
+   LOOP FOLDS
    ------------------------------ */
 
-.bow-fold {
+.bow-fold-line {
     fill: none;
 
-    stroke: url(#bowHighlight);
+    stroke: url(#bowShine);
+
     stroke-width: 2;
 
     stroke-linecap: round;
@@ -405,16 +405,34 @@ nav a:hover {
 
 
 /* ------------------------------
+   TAIL HIGHLIGHTS
+   ------------------------------ */
+
+.bow-tail-highlight {
+    fill: none;
+
+    stroke: url(#bowShine);
+
+    stroke-width: 1.5;
+
+    stroke-linecap: round;
+
+    opacity: .65;
+}
+
+
+/* ------------------------------
    CENTRE KNOT
    ------------------------------ */
 
-.bow-knot {
-    fill: #c9a45f;
+.real-bow-knot {
+    fill: #c6a45d;
 
-    stroke: #a9894d;
+    stroke: #9f7f42;
+
     stroke-width: 1;
 
-    transform-origin: 80px 31px;
+    transform-origin: 100px 47px;
 
     animation:
         hhKnotAppear
@@ -433,12 +451,12 @@ nav a:hover {
 
     0% {
         opacity: 0;
-        transform: translateY(-8px) scale(.65);
+        transform: translateY(-10px) scale(.7);
     }
 
     60% {
         opacity: 1;
-        transform: translateY(2px) scale(1.07);
+        transform: translateY(2px) scale(1.05);
     }
 
     80% {
@@ -463,13 +481,14 @@ nav a:hover {
     }
 
     65% {
-        transform: scale(1.2);
+        transform: scale(1.18);
     }
 
     100% {
         transform: scale(1);
     }
 }
+
 /* ==============================
    RESPONSIVE / MOBILE DESIGN
    ============================== */
