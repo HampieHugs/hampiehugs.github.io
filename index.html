@@ -36,44 +36,57 @@
 
     <svg viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg">
 
-        <!-- Left loop -->
+        <defs>
+            <linearGradient id="bowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#d8bd78"/>
+                <stop offset="50%" stop-color="#b89552"/>
+                <stop offset="100%" stop-color="#d8bd78"/>
+            </linearGradient>
+        </defs>
+
+        <!-- Left bow loop -->
         <path
-            class="bow-stroke bow-left-loop"
-            d="M80 28
-               C62 5, 35 5, 38 25
-               C40 42, 63 39, 80 28"
+            class="bow-loop bow-left"
+            d="M80 30
+               C67 12, 43 7, 35 18
+               C28 28, 42 42, 60 42
+               C69 42, 76 36, 80 30 Z"
         />
 
-        <!-- Right loop -->
+        <!-- Right bow loop -->
         <path
-            class="bow-stroke bow-right-loop"
-            d="M80 28
-               C98 5, 125 5, 122 25
-               C120 42, 97 39, 80 28"
+            class="bow-loop bow-right"
+            d="M80 30
+               C93 12, 117 7, 125 18
+               C132 28, 118 42, 100 42
+               C91 42, 84 36, 80 30 Z"
         />
 
         <!-- Left ribbon tail -->
         <path
-            class="bow-stroke bow-left-tail"
-            d="M78 32
-               C67 46, 63 62, 58 82
-               L70 70"
+            class="bow-tail bow-left-tail"
+            d="M75 34
+               C68 47, 61 62, 56 82
+               L70 71
+               L78 39 Z"
         />
 
         <!-- Right ribbon tail -->
         <path
-            class="bow-stroke bow-right-tail"
-            d="M82 32
-               C93 46, 97 62, 102 82
-               L90 70"
+            class="bow-tail bow-right-tail"
+            d="M85 34
+               C92 47, 99 62, 104 82
+               L90 71
+               L82 39 Z"
         />
 
-        <!-- Center knot -->
-        <circle
+        <!-- Centre knot -->
+        <ellipse
             class="bow-knot"
             cx="80"
-            cy="28"
-            r="6"
+            cy="30"
+            rx="8"
+            ry="7"
         />
 
     </svg>
