@@ -54,7 +54,7 @@ header img {
 }
 
 .hero-ending {
-    font-size: 20px;
+    font-size: 22px;
     font-style: italic;
     line-height: 1.6;
     margin: 0 auto 38px;
@@ -63,7 +63,7 @@ header img {
 .hero-tagline {
     font-size: 16px;
     letter-spacing: 0.5px;
-    margin: 0 auto 18px;
+    margin: 0 auto 20px;
 }
 
 .hero a {
