@@ -583,4 +583,226 @@ nav a {
     }
 }
 
+/* ==============================
+   ABOUT US PAGE
+   ============================== */
+
+.about-page {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* INTRODUCTION */
+
+.about-intro {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 75px 25px 45px;
+}
+
+.about-eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #a8874f;
+    margin-bottom: 18px;
+}
+
+.about-intro h1 {
+    font-size: 42px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: 0 0 28px;
+}
+
+.about-greeting {
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 0 auto;
+}
+
+.about-divider {
+    width: 65px;
+    height: 1px;
+    background-color: #b89552;
+    margin: 40px auto 0;
+}
+
+
+/* OUR STORY */
+
+.about-story {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 35px 25px 70px;
+}
+
+.about-story h2,
+.about-journey h2 {
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.about-story p {
+    font-size: 16px;
+    line-height: 1.9;
+    margin: 0 0 25px;
+}
+
+.about-story .about-highlight {
+    font-size: 23px;
+    font-style: italic;
+    text-align: center;
+    color: #a8874f;
+    margin: 38px 0;
+}
+
+
+/* OUR JOURNEY */
+
+.about-journey {
+    background-color: #e5dace;
+    padding: 65px 25px 75px;
+    text-align: center;
+}
+
+.journey-items {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.journey-item {
+    padding: 20px 15px;
+}
+
+.journey-item span {
+    color: #a8874f;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.journey-item h3 {
+    font-size: 21px;
+    font-weight: normal;
+    margin: 15px 0;
+}
+
+.journey-item p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* CLOSING */
+
+.about-closing {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 75px 25px 85px;
+}
+
+.about-closing p {
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.7;
+    margin: 0 auto 30px;
+}
+
+.about-closing a {
+    display: inline-block;
+    padding: 13px 28px;
+    background-color: #b58b8b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+
+/* ABOUT PAGE - MOBILE */
+
+@media (max-width: 600px) {
+
+    .about-intro {
+        padding: 55px 22px 35px;
+    }
+
+    .about-intro h1 {
+        font-size: 32px;
+    }
+
+    .about-greeting {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .about-story {
+        padding: 30px 22px 50px;
+    }
+
+    .about-story h2,
+    .about-journey h2 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .about-story p {
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 22px;
+    }
+
+    .about-story .about-highlight {
+        font-size: 21px;
+    }
+
+    .about-journey {
+        padding: 50px 22px;
+    }
+
+    .journey-items {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .journey-item {
+        padding: 15px 10px;
+    }
+
+    .about-closing {
+        padding: 55px 22px 65px;
+    }
+
+    .about-closing p {
+        font-size: 21px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .about-intro h1 {
+        font-size: 29px;
+    }
+
+    .about-greeting {
+        font-size: 14px;
+    }
+
+    .about-story p {
+        font-size: 14px;
+    }
+
+    .about-closing p {
+        font-size: 19px;
+    }
+}
+
+
 
